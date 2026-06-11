@@ -8,7 +8,7 @@ public class Spalla implements OrganoElement {
 
     @Override
     public void accept(EsameMedicoVisitor visitor) {
-        visitor.risonanzaMagnetica(this);
+        visitor.visita(this);
     }
 
     @Override

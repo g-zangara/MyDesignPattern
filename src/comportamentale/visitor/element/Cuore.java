@@ -8,7 +8,7 @@ public class Cuore implements OrganoElement {
 
     @Override
     public void accept(EsameMedicoVisitor visitor) {
-        visitor.elettrocardiogramma(this);
+        visitor.visita(this);
     }
 
     @Override

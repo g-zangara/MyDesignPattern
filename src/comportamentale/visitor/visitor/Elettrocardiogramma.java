@@ -1,21 +1,23 @@
 package comportamentale.visitor.visitor;
 
-import comportamentale.visitor.element.OrganoElement;
+import comportamentale.visitor.element.Cuore;
+import comportamentale.visitor.element.Fegato;
+import comportamentale.visitor.element.Spalla;
 
 public class Elettrocardiogramma implements EsameMedicoVisitor {
 
     @Override
-    public void elettrocardiogramma(OrganoElement e) {
-        System.out.println("Elettrocardiogramma: "+e.getNome());
+    public void visita(Cuore cuore) {
+        System.out.println("Elettrocardiogramma: " + cuore.getNome());
     }
 
     @Override
-    public void ecocardiogramma(OrganoElement e) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void visita(Fegato fegato) {
+        throw new UnsupportedOperationException("Elettrocardiogramma non applicabile al fegato.");
     }
 
     @Override
-    public void risonanzaMagnetica(OrganoElement e) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void visita(Spalla spalla) {
+        throw new UnsupportedOperationException("Elettrocardiogramma non applicabile alla spalla.");
     }
 }

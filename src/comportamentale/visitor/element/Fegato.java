@@ -9,7 +9,7 @@ public class Fegato implements OrganoElement {
 
     @Override
     public void accept(EsameMedicoVisitor visitor) {
-        visitor.ecocardiogramma(this);
+        visitor.visita(this);
     }
 
     @Override
