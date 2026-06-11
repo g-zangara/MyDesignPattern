@@ -3,7 +3,12 @@ package creazionale.builder.builder;
 import creazionale.builder.product.Casa;
 
 public class ImpresaPaperino implements AziendaBuilder{
-    Casa casa = new Casa();
+    private Casa casa;
+
+    @Override
+    public void reset() {
+        casa = new Casa();
+    }
 
     @Override
     public void buildStanze() {

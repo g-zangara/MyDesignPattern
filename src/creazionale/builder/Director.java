@@ -5,6 +5,7 @@ import creazionale.builder.builder.AziendaBuilder;
 public class Director {
 
     public void build(AziendaBuilder b) {
+        b.reset();
         b.buildStanze();
         b.buildBagni();
         b.buildPiani();

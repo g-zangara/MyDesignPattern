@@ -4,6 +4,8 @@ import creazionale.builder.product.Product;
 
 public interface AziendaBuilder {
 
+    void reset();
+
     void buildStanze();
     void buildBagni();
     void buildPiani();
