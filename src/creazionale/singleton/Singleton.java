@@ -1,6 +1,9 @@
 package creazionale.singleton;
 
-public final class Singleton {
+import java.io.Serial;
+import java.io.Serializable;
+
+public final class Singleton  implements Serializable {
 
     private static Singleton INSTANCE = null;
 
@@ -14,6 +17,7 @@ public final class Singleton {
     }
 
     //Per gestione problema in caso di serializzazione/deserializzazione
+    @Serial
     private Object readResolve() {
         return getInstance();
     }
