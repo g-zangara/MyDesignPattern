@@ -1,10 +1,10 @@
 package strutturale.adapter;
 
-public class TriangleAdpterObject implements Figura2D {
+public class TriangleAdapterObject implements Figura2D {
 
     private final XXXTriangleAdptee triangleAdptee;
 
-    public TriangleAdpterObject(double latoA, double latoB, double latoC) {
+    public TriangleAdapterObject(double latoA, double latoB, double latoC) {
         this.triangleAdptee = new XXXTriangleAdptee(latoA, latoB, latoC);
     }
 

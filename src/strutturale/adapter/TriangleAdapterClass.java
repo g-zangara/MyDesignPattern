@@ -1,8 +1,8 @@
 package strutturale.adapter;
 
-public class TriangleAdpterClass extends XXXTriangleAdptee implements Figura2D {
+public class TriangleAdapterClass extends XXXTriangleAdptee implements Figura2D {
 
-    public TriangleAdpterClass(double sideA, double sideB, double sideC) {
+    public TriangleAdapterClass(double sideA, double sideB, double sideC) {
         super(sideA, sideB, sideC);
     }
 
